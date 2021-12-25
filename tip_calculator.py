@@ -7,4 +7,5 @@ tip=int(tip)
 people=input("How many people to split the bill? ")
 people=int(people)
 total_bill=(bill+(bill*tip*0.01))/people
-print(round(total_bill,2))
+total_bill="{:.2f}".format(round(total_bill,2))
+print(f"Each person will pay {total_bill}")
